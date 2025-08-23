@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIC MLRITM</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-white antialiased">
+
+    <!-- Container for the entire page -->
+    <div class="flex flex-col min-h-screen">
+
+        <!-- Header and Navigation -->
+        <header class="bg-slate-800/50 backdrop-blur-sm sticky top-0 z-50">
+            <div class="container mx-auto px-4">
+                <nav class="flex justify-between items-center py-4">
+                    <!-- Left side: Club Logo and Name -->
+                    <div class="flex items-center space-x-4">
+                         <img src="image_293e7f.png" alt="IIC Club Logo" class="w-12 h-12 rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/48x48/1e293b/ffffff?text=IIC';">
+                        <span class="text-2xl font-bold text-white">IIC MLRITM</span>
+                    </div>
+                    <!-- Right side: Navigation Links -->
+                    <div class="hidden md:flex space-x-8 text-lg">
+                        <a href="#home" class="text-gray-300 hover:text-sky-400 transition duration-300">Home</a>
+                        <a href="#about" class="text-gray-300 hover:text-sky-400 transition duration-300">About Us</a>
+                        <a href="#events" class="text-gray-300 hover:text-sky-400 transition duration-300">Events</a>
+                        <a href="#contact" class="text-gray-300 hover:text-sky-400 transition duration-300">Contact</a>
+                    </div>
+                    <!-- Mobile Menu Button (optional) -->
+                    <div class="md:hidden">
+                        <button class="text-white focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content Section -->
+        <main class="flex-grow">
+            <!-- Hero Section -->
+            <section id="home" class="flex flex-col items-center justify-center text-center p-8 pt-24 pb-24 bg-slate-900">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight">
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-cyan-300">
+                        Welcome to the IIC
+                    </span>
+                </h1>
+                <p class="mt-4 text-lg md:text-xl text-slate-400 max-w-3xl mx-auto">
+                    MLRITM's Institution's Innovation Council. Your journey into innovation, incubation, and entrepreneurship starts here.
+                </p>
+            </section>
+
+            <!-- About Us Section -->
+            <section id="about" class="py-20 bg-slate-800">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">About Us</h2>
+                    <p class="text-lg text-slate-300 max-w-4xl mx-auto">
+                        The Institution's Innovation Council (IIC) at MLRITM is a dynamic body established to systematically foster the culture of innovation. We aim to encourage, inspire, and nurture young students by supporting them to work with new ideas and transform them into prototypes and potential startups.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Events Section -->
+            <section id="events" class="py-20 bg-slate-900">
+                <div class="container mx-auto px-6">
+                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Events</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Event Card 1 -->
+                        <div class="bg-slate-800 rounded-lg p-6 transform hover:-translate-y-2 transition-transform duration-300">
+                            <h3 class="text-2xl font-bold mb-2 text-sky-400">Ideation Workshops</h3>
+                            <p class="text-slate-400">Engage in brainstorming sessions and workshops designed to spark creativity and help you formulate groundbreaking ideas.</p>
+                        </div>
+                        <!-- Event Card 2 -->
+                        <div class="bg-slate-800 rounded-lg p-6 transform hover:-translate-y-2 transition-transform duration-300">
+                            <h3 class="text-2xl font-bold mb-2 text-sky-400">Hackathons</h3>
+                            <p class="text-slate-400">Compete in exciting hackathons to build innovative solutions for real-world problems in a collaborative environment.</p>
+                        </div>
+                        <!-- Event Card 3 -->
+                        <div class="bg-slate-800 rounded-lg p-6 transform hover:-translate-y-2 transition-transform duration-300">
+                            <h3 class="text-2xl font-bold mb-2 text-sky-400">Guest Lectures</h3>
+                            <p class="text-slate-400">Learn from industry experts, successful entrepreneurs, and innovators who share their experiences and insights.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer id="contact" class="bg-slate-800 py-10">
+            <div class="container mx-auto text-center text-slate-400">
+                <p class="mb-4">Follow us on our social media</p>
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="https://www.instagram.com/iic_mlritm/?hl=en" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12.315 2c-4.02.055-5.657 1.688-5.657 5.657v8.656c0 3.969 1.637 5.604 5.657 5.657h8.656c3.969 0 5.604-1.637 5.657-5.657V7.657C26.628 3.688 24.99 2.055 21.02 2H12.315zm-1.002 3.6h10.63c2.147 0 3.278 1.132 3.278 3.278v10.63c0 2.147-1.132 3.278-3.278 3.278H11.313c-2.147 0-3.278-1.132-3.278-3.278V8.878c0-2.147 1.132-3.278 3.278-3.278z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M16.949 7.846a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M16.47 10.23a6.24 6.24 0 10-8.824 8.824 6.24 6.24 0 008.824-8.824zm-1.414 7.41a4.24 4.24 0 11-5.996-5.996 4.24 4.24 0 015.996 5.996z" clip-rule="evenodd"/>
+                        </svg>
+                    </a>
+                </div>
+                <p>&copy; 2024 IIC MLRITM. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
